@@ -13,7 +13,14 @@ const slug = route.params?.slug;
 const query = GET_POLICY_BY_SLUG;
 const variables = { where: { slug } };
 const { data } = await useAsyncQuery(query, variables);
-if (!data.value || !data.value.policyCollection) {
+console.log("getting policy: ", data.value);
+if (
+  !data.value ||
+  !data.value.policyCollection ||
+  !data.value.policyCollection.items ||
+  data.value.policyCollection.items.length === 0
+) {
+  console.log("cannot find policy");
   throw createError({ statusCode: 404, statusMessage: "Page Not Found" });
 }
 </script>
