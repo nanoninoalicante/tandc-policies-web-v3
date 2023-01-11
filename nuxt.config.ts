@@ -1,4 +1,3 @@
-import { routes } from "./routes";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -8,11 +7,6 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
-    },
-  },
-  nitro: {
-    prerender: {
-      routes,
     },
   },
   apollo: {
