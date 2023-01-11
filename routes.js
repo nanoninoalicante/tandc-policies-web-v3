@@ -1,0 +1,18 @@
+export const routes = [
+    "/t/sndjoy-en-privacy-user",
+    "/t/sndjoy-en-privacy-joygiver",
+    "/t/sndjoy-en-terms-joygiver",
+    "/t/sndjoy-en-terms-user",
+    "/t/freecaddie-en-terms",
+    "/t/clientpro-privacy-policy",
+    "/t/tonto-privacy-policy",
+    "/t/tonto-terms-of-use",
+    "/t/clientpro-privacy-professionals",
+    "/t/qpay-en-cookies-privacy",
+    "/t/qpay-en-faq",
+    "/t/qpay-en-about-us",
+    "/t/freecaddie-en-privacy",
+    "/t/urlo-en-termsofuse",
+    "/t/clickers-en-terms",
+    "/t/clickers-en-policy",
+];

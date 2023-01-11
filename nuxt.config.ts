@@ -1,12 +1,18 @@
+import { routes } from "./routes";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/apollo"],
   css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+  nitro: {
+    prerender: {
+      routes,
     },
   },
   apollo: {
