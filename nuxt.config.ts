@@ -1,4 +1,4 @@
-// import { routes } from "./routes";
+import { routes } from "./routes";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -10,11 +10,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  //   nitro: {
-  //     prerender: {
-  //       routes,
-  //     },
-  //   },
+  nitro: {
+    prerender: {
+      routes,
+    },
+  },
   apollo: {
     clients: {
       default: {

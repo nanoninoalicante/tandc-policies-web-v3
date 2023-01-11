@@ -1,0 +1,1 @@
+export const routes = ["/t/sndjoy-en-privacy-user", "/t/qpay-en-cookies-privacy"]
